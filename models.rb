@@ -52,7 +52,7 @@ module Assassins
     def set_target_notify (target)
       self.target = target
       send_email('You have a new target!',
-                 "Name: #{target.name}\nFloor: #{target.floor.description}\nProgram: #{target.program.title}\n\nPlease remember that the official rules are posted at http://www.cmu-assassins.tk/rules")
+                 "Name: #{target.name}\nFloor: #{target.floor.description}\nProgram: #{target.program.title}\n\nPlease remember that the official rules are posted at http://saints-senior-assassin.herokuapp.com/rules")
     end
 
     def generate_secret! (num_words)
