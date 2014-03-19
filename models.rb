@@ -67,7 +67,7 @@ module Assassins
     end
 
     def email
-      "#{self.andrew_id}@andrew.cmu.edu"
+      "#{self.andrew_id}"
     end
 
     def active?
