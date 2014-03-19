@@ -6,11 +6,12 @@ module Assassins
       mailer = Assassins::App.settings.mailer
       message = {
         :subject => subject,
-        :from_name => 'CMU Assassins',
+        :from_name => 'Saints Assassins',
         :text => body,
         :to => to,
         :preserve_recipients => false,
-        :from_email => 'donotreply@cmu-assassins.tk'
+        :from_email => 'donotreply@saints-senior-assassin.herokuapp.com'
+        # :from_email => 'donotreply@cmu-assassins.tk'
       }
       if !mailer.nil?
         $stderr.puts mailer.messages.send(message)
